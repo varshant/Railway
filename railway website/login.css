@@ -14,7 +14,7 @@ body {
   background-position: center;
   height: 100vh;
   width: 100%;
-  position: fixed;
+  overflow: hidden;
 }
 .main {
   width: 400px;
