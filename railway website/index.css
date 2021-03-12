@@ -1,138 +1,185 @@
-*{
-	margin:0; padding:0; box-sizing: border-box;
-	font-family: 'Josefin Sans', sans-serif;
-}
-header{
-	width: 100%; height:100vh;
-	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)) ,url('photos/main.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	transition: 5s;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
 
-	animation-name: animate;
-	animation-direction: alternate-reverse; ;
-	animation-duration:50s ;
-	animation-fill-mode: forwards;
-	animation-iteration-count: infinite;
-	animation-play-state: running; ;
-	animation-timing-function: ease-in-out;
+/*
+!=========================
+	!General Resets
+!=========================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 62.5%;
 }
-nav{
-	width:100%; height: 15vh;
-	background: rgba(0,0,0,0.6);
-	color: white; display: flex; justify-content: space-around;
-	align-items: center; text-transform: uppercase;
-	font-weight: bolder;
+/*
+===============================
+	full header css
+===============================
+*/
+header {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 5s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 50s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
 }
-nav .logo{
-	width: 25%; text-align: center;
-	font-size: 30px;
-	font-weight: bolder;
-	color: rgb(255,165,0);
+/*
+!===============================
+	!Navbar styling
+!===============================
+*/
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.712);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
-nav .menu{
-	width:60%; 
-	display: flex; justify-content: space-around; 
+nav .logo {
+  width: 25%;
+  text-align: center;
+  font-size: 5.3rem;
+  font-weight: bolder;
+  color: #8f08dd;
 }
-nav .menu a:hover{
-	color: #FFA500;
+nav .menu {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
 }
-nav .menu a{
-	width: 25px;
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
+nav .menu a:hover {
+  color: #8f08dd;
 }
-main{
-	width: 100%;
-	height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+nav .menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+/*
+!==============================
+	!Main styling
+!==============================
+*/
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
 
-section h3{
-    font-size: 35px; font-weight: bold; letter-spacing: 3px;
-    text-shadow: 1px 1px 2px black;
-
+section h3 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
 }
 
-section h1{
-	margin: 20px 0 20px 0;
-	font-size: 55px;
-	font-weight: 700;
-	text-shadow: 2px 1px 5px black;
-	text-transform: uppercase;
+section h1 {
+  margin: 5rem auto;
+  font-size: 5.5rem;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
 }
 
-section p{
-	font-size: 25px;
-	color: #eee;
-	word-spacing: 2px;
-	margin-bottom: 30px;
-	text-shadow: 1px 1px 1px black;
+section p {
+  font-size: 2.5rem;
+  color: #eee;
+  word-spacing: 2px;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 1px black;
 }
-section a{
-	padding: 12px 30px;
-	border-radius: 4px;
-	outline: none;
-	text-transform: uppercase;
-	font-size: 13px
-	font-weight:500;
-	text-decoration: none;
-	letter-spacing: 1px;
+section a {
+  padding: 0.8em 1.8em;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin: 0.2rem;
 }
-section .registration{
-		background: #00b894;
- 	color: white;
+section .registration {
+  background: #8f08dd;
+  color: white;
 }
-section .registration:hover{
-	color: black;
-	background: white;
+section .registration:hover {
+  background: black;
+  transition: all 0.3s;
 }
-section .btnone{
- 	background: white;
- 	color: black;
- }
- section .btnone:hover{
-	background: #00b894;
+section .btnone {
+  background: black;
+  color: white;
 }
- section .btntwo{
- 	background: #00b894;
- 	color: white;
- }
-  section .btntwo:hover{
-	color: black;
-	background: white;
+section .btnone:hover {
+  background: #8f08dd;
+  transition: all 0.3s;
 }
-.animate__heartBeat{
-	animation: none 1s infinite ;
+section .btntwo {
+  background: #8f08dd;
+  color: white;
 }
- 
+section .btntwo:hover {
+  background: black;
+  transition: all 0.3s;
+}
+.animate__heartBeat {
+  animation: none 1s infinite;
+}
 
 @keyframes animate {
-	0% { background-image: url(photos/main.jpg); }
-	10% { background-image: url(photos/1.jpg); }
-	20% { background-image: url(photos/2.jpg); }
-    30% { background-image: url(photos/3.jpg); }
-	40% { background-image: url(photos/4.jpg); }
-	50% { background-image: url(photos/5.jpg); }
-	60% { background-image: url(photos/6.jpg); }
-	70% { background-image: url(photos/7.jpg); }
-	80% { background-image: url(photos/8.jpg); }
-	90% { background-image: url(photos/9.jpg); }
-	100% { background-image: url(photos/10.jpg); }
-	}
-
-
-
-
-
-
- 
-
-
-
+  0% {
+    background-image: url(photos/main.jpg);
+  }
+  10% {
+    background-image: url(photos/1.jpg);
+  }
+  20% {
+    background-image: url(photos/2.jpg);
+  }
+  30% {
+    background-image: url(photos/3.jpg);
+  }
+  40% {
+    background-image: url(photos/4.jpg);
+  }
+  50% {
+    background-image: url(photos/5.jpg);
+  }
+  60% {
+    background-image: url(photos/6.jpg);
+  }
+  70% {
+    background-image: url(photos/7.jpg);
+  }
+  80% {
+    background-image: url(photos/8.jpg);
+  }
+  90% {
+    background-image: url(photos/9.jpg);
+  }
+  100% {
+    background-image: url(photos/10.jpg);
+  }
+}
