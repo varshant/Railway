@@ -85,6 +85,7 @@ img {
   background: rgb(74, 11, 156);
   color: white;
   margin: 1rem 0;
+  cursor: pointer;
 }
 .btn h6 {
   font-size: 1.5rem;
